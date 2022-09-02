@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
     <header className="header">
-      <img src="src/assets/logo.png" alt="Logo" className="logo" />
+      <img src="/assets/logo.png" alt="Logo" className="logo" />
       <input type="checkbox"  id='check'/>
       <label htmlFor="check" className="hamburguer-menu">
         <box-icon name='menu-alt-right'></box-icon>
@@ -23,7 +23,7 @@ function App() {
       <h2 className="section-title">Noelia Kronemberger</h2>
       <div className="about-me-container">
         <p className="about-me-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni rem odit accusantium amet, ipsum magnam veniam quisquam quis quidem, dicta omnis iste voluptates asperiores doloremque! Expedita quidem excepturi modi enim aliquid, nisi molestias consequuntur eum distinctio consequatur repudiandae dolore illo.</p>
-        <img src="src/assets/profile_picture.jpg" alt="Noelia" className="profile-picture" />
+        <img src="/assets/profile_picture.jpg" alt="Noelia" className="profile-picture" />
       </div>
       <div className="about-me-buttons-container">
         <button type='button' className='section-button'>
