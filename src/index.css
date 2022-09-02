@@ -101,10 +101,6 @@
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.separator{
-  border-top: 4px solid #64949E;
-  margin-bottom: 30px;
-}
 
 .projects-buttons-container{
   margin-top: 30px;
@@ -112,7 +108,8 @@
   gap: 2rem;
 }
 
-.top{
+.separator, .top{
+  border-top: 4px solid #64949E;
   margin-top: 30px;
 }
 
