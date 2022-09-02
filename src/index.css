@@ -10,7 +10,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  background-image: url(./assets/background.jpg);
+  background-image: url(/assets/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat-y;
