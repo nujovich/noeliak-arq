@@ -40,6 +40,7 @@ function App() {
         </button>
       </div>
     </section>
+    <hr className="separator" />
     <section className='projects-section' id='projects'>
       <h2 className='section-title top-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
