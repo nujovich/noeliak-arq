@@ -1,7 +1,15 @@
 import { useRef } from "react"
+import FileSaver from "file-saver";
+import { ScrollUp } from "./components/ScrollUp";
 
 
 function App() {
+
+  const FILE_PATH = 'assets/CV ARQ KRONEMBERGER NOELIA 2022 AGOSTO.pdf'
+
+  const downloadCV = () => {
+    FileSaver.saveAs(import.meta.env.BASE_URL + FILE_PATH, "CV_Noelia_Kronemberger.pdf");
+}
 
   const home = useRef(null)
   const projects = useRef(null)
@@ -22,6 +30,7 @@ function App() {
 
   return (
     <div className="App">
+    <ScrollUp />
     <header className="header">
       <img src="/assets/logo.png" alt="Logo" className="logo" />
       <input type="checkbox"  id='check'/>
@@ -45,13 +54,13 @@ function App() {
         <img src="/assets/profile_picture.jpg" alt="Noelia" className="profile-picture" />
       </div>
       <div className="about-me-buttons-container">
-        <button type='button' className='section-button'>
+        <button type='button' className='section-button' onClick={() => downloadCV()}>
           <span className='button-text'>Mi Curriculum</span>
           <span className='button-icon'>
             <box-icon name='cloud-download'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(contact)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(contact)} onClick={() => scrollToSection(contact)}>
         <span className='button-text'>Mi Contacto</span>
           <span className='button-icon'>
           <box-icon name='contact' type='solid'></box-icon>
@@ -65,31 +74,31 @@ function App() {
     <section className='projects-section' ref={projects}>
       <h2 className='section-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
-        <button type='button' className='section-button' onClick={() => scrollToSection(casaPatio)}>
+        <button type='button' className='section-button' onClick={() => scrollToSection(casaPatio)} onClick={() => scrollToSection(casaPatio)}>
           <span className='button-text'>Casa Patio</span>
           <span className='button-icon'>
           <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaAei)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAei)} onClick={() => scrollToSection(casaAei)}>
         <span className='button-text'>Casa AEI</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaAA)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAA)} onClick={() => scrollToSection(casaAA)}>
         <span className='button-text'>Casa AA</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaDonMateo)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaDonMateo)} onClick={() => scrollToSection(casaDonMateo)}>
         <span className='button-text'>Casa Don Mateo</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaLeones)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaLeones)} onClick={() => scrollToSection(casaLeones)}>
         <span className='button-text'>Casa Leones</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
@@ -122,12 +131,20 @@ function App() {
         <span className="detail-row">País</span>
         <span className="detail-row right">Argentina</span>
       </div>
-      <button type='button' className="section-button detail-button">
+      <div className="buttons-container">
+        <button type='button' className="section-button">
         <span className='button-text'>Ver Detalles</span>
           <span className='button-icon'>
             <box-icon name='detail' ></box-icon>
           </span>
-      </button>
+        </button>
+        <button type='button' className="section-button" onClick={() => scrollToSection(projects)}>
+        <span className='button-text'>Volver</span>
+          <span className='button-icon'>
+          <box-icon name='up-arrow-alt'></box-icon>
+          </span>
+        </button>
+      </div>
       <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
@@ -158,12 +175,20 @@ function App() {
         <span className="detail-row">País</span>
         <span className="detail-row right">Argentina</span>
       </div>
-      <button type='button' className="section-button detail-button">
+      <div className="buttons-container">
+        <button type='button' className="section-button">
         <span className='button-text'>Ver Detalles</span>
           <span className='button-icon'>
             <box-icon name='detail' ></box-icon>
           </span>
-      </button>
+        </button>
+        <button type='button' className="section-button" onClick={() => scrollToSection(projects)}>
+        <span className='button-text'>Volver</span>
+          <span className='button-icon'>
+          <box-icon name='up-arrow-alt'></box-icon>
+          </span>
+        </button>
+      </div>
       <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
@@ -194,12 +219,20 @@ function App() {
         <span className="detail-row">País</span>
         <span className="detail-row right">Argentina</span>
       </div>
-      <button type='button' className="section-button detail-button">
+      <div className="buttons-container">
+        <button type='button' className="section-button">
         <span className='button-text'>Ver Detalles</span>
           <span className='button-icon'>
             <box-icon name='detail' ></box-icon>
           </span>
-      </button>
+        </button>
+        <button type='button' className="section-button" onClick={() => scrollToSection(projects)}>
+        <span className='button-text'>Volver</span>
+          <span className='button-icon'>
+          <box-icon name='up-arrow-alt'></box-icon>
+          </span>
+        </button>
+      </div>
       <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
@@ -230,12 +263,20 @@ function App() {
         <span className="detail-row">País</span>
         <span className="detail-row right">Argentina</span>
       </div>
-      <button type='button' className="section-button detail-button">
+      <div className="buttons-container">
+        <button type='button' className="section-button">
         <span className='button-text'>Ver Detalles</span>
           <span className='button-icon'>
             <box-icon name='detail' ></box-icon>
           </span>
-      </button>
+        </button>
+        <button type='button' className="section-button" onClick={() => scrollToSection(projects)}>
+        <span className='button-text'>Volver</span>
+          <span className='button-icon'>
+          <box-icon name='up-arrow-alt'></box-icon>
+          </span>
+        </button>
+      </div>
       <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
@@ -266,12 +307,20 @@ function App() {
         <span className="detail-row">País</span>
         <span className="detail-row right">Argentina</span>
       </div>
-      <button type='button' className="section-button detail-button">
+      <div className="buttons-container">
+        <button type='button' className="section-button">
         <span className='button-text'>Ver Detalles</span>
           <span className='button-icon'>
             <box-icon name='detail' ></box-icon>
           </span>
-      </button>
+        </button>
+        <button type='button' className="section-button" onClick={() => scrollToSection(projects)}>
+        <span className='button-text'>Volver</span>
+          <span className='button-icon'>
+          <box-icon name='up-arrow-alt'></box-icon>
+          </span>
+        </button>
+      </div>
       <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
@@ -282,14 +331,14 @@ function App() {
     </div>
     <section className="contact" ref={contact}>
       <h2 className="section-title">Contacto</h2>
-      <div className="contact-container">
-        <button type='button' className="section-button detail-button">
-          <span className='button-text'>LinkedIn</span>
+      <div className="buttons-container">
+        <button type='button' className="section-button detail-button" onClick={() => window.location = 'https://wa.me/3416908817'}>
+          <span className='button-text'>WhatSapp</span>
             <span className='button-icon'>
-            <box-icon name='linkedin-square' type='logo' ></box-icon>
+            <box-icon name='whatsapp' type='logo' ></box-icon>
             </span>
         </button>
-        <button type='button' className="section-button detail-button">
+        <button type='button' className="section-button detail-button" onClick={() => window.location = 'mailto:noeliakronemberger@gmail.com'}>
           <span className='button-text'>E-Mail</span>
             <span className='button-icon'>
             <box-icon name='envelope' type='solid' ></box-icon>
