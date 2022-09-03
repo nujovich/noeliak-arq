@@ -40,7 +40,9 @@ function App() {
         </button>
       </div>
     </section>
-    <hr className="separator" />
+    <div className="separator">
+      <hr/>
+    </div>
     <section className='projects-section' id='projects'>
       <h2 className='section-title top-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
@@ -76,7 +78,9 @@ function App() {
         </button>
       </div>
     </section>
-    <hr className="separator top" />
+    <div className="separator">
+      <hr/>
+    </div>
     <section className='casa-patio-section' id='casa-patio'>
       <h2 className='section-title'>Casa Patio</h2>
       <div className="grid-container">
@@ -109,6 +113,170 @@ function App() {
         El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
         El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
       </span>
+    </section>
+    <div className="separator">
+      <hr/>
+    </div>
+    <section className='casa-aei-section' id='casa-aei'>
+      <h2 className='section-title'>Casa AEI</h2>
+      <div className="grid-container">
+        <span className="detail-row">Arquitectos</span>
+        <span className="detail-row right">Estudio Arq414; Noelia S. Kronemberger; Nestor Germán Sosa</span>
+        <span className="detail-row">Área</span>
+        <span className="detail-row right">130m² cubiertos; 35m² semicubiertos</span>
+        <span className="detail-row">Superficie del terreno</span>
+        <span className="detail-row right">494m²</span>
+        <span className="detail-row">Superficie Pileta</span>
+        <span className="detail-row right">30m²</span>
+        <span className="detail-row">Orientación</span>
+        <span className="detail-row right">Norte-Sur</span>
+        <span className="detail-row">Año</span>
+        <span className="detail-row right">2021-2022</span>
+        <span className="detail-row">Barrio</span>
+        <span className="detail-row right">Estación Alvear</span>
+        <span className="detail-row">Localidad</span>
+        <span className="detail-row right">Alvear, Santa Fe</span>
+        <span className="detail-row">País</span>
+        <span className="detail-row right">Argentina</span>
+      </div>
+      <button type='button' className="section-button detail-button">
+        <span className='button-text'>Ver Detalles</span>
+          <span className='button-icon'>
+            <box-icon name='detail' ></box-icon>
+          </span>
+      </button>
+      <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
+        El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
+        El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
+      </span>
+    </section>
+    <div className="separator">
+      <hr/>
+    </div>
+    <section className='casa-aa-section' id='casa-aa'>
+      <h2 className='section-title'>Casa AA</h2>
+      <div className="grid-container">
+        <span className="detail-row">Arquitectos</span>
+        <span className="detail-row right">Estudio Arq414; Noelia S. Kronemberger; Nestor Germán Sosa</span>
+        <span className="detail-row">Área</span>
+        <span className="detail-row right">130m² cubiertos; 35m² semicubiertos</span>
+        <span className="detail-row">Superficie del terreno</span>
+        <span className="detail-row right">494m²</span>
+        <span className="detail-row">Superficie Pileta</span>
+        <span className="detail-row right">30m²</span>
+        <span className="detail-row">Orientación</span>
+        <span className="detail-row right">Norte-Sur</span>
+        <span className="detail-row">Año</span>
+        <span className="detail-row right">2021-2022</span>
+        <span className="detail-row">Barrio</span>
+        <span className="detail-row right">Estación Alvear</span>
+        <span className="detail-row">Localidad</span>
+        <span className="detail-row right">Alvear, Santa Fe</span>
+        <span className="detail-row">País</span>
+        <span className="detail-row right">Argentina</span>
+      </div>
+      <button type='button' className="section-button detail-button">
+        <span className='button-text'>Ver Detalles</span>
+          <span className='button-icon'>
+            <box-icon name='detail' ></box-icon>
+          </span>
+      </button>
+      <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
+        El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
+        El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
+      </span>
+    </section>
+    <div className="separator">
+      <hr/>
+    </div>
+    <section className='casa-don-mateo-section' id='casa-don-mateo'>
+      <h2 className='section-title'>Casa Don Mateo</h2>
+      <div className="grid-container">
+        <span className="detail-row">Arquitectos</span>
+        <span className="detail-row right">Estudio Arq414; Noelia S. Kronemberger; Nestor Germán Sosa</span>
+        <span className="detail-row">Área</span>
+        <span className="detail-row right">130m² cubiertos; 35m² semicubiertos</span>
+        <span className="detail-row">Superficie del terreno</span>
+        <span className="detail-row right">494m²</span>
+        <span className="detail-row">Superficie Pileta</span>
+        <span className="detail-row right">30m²</span>
+        <span className="detail-row">Orientación</span>
+        <span className="detail-row right">Norte-Sur</span>
+        <span className="detail-row">Año</span>
+        <span className="detail-row right">2021-2022</span>
+        <span className="detail-row">Barrio</span>
+        <span className="detail-row right">Estación Alvear</span>
+        <span className="detail-row">Localidad</span>
+        <span className="detail-row right">Alvear, Santa Fe</span>
+        <span className="detail-row">País</span>
+        <span className="detail-row right">Argentina</span>
+      </div>
+      <button type='button' className="section-button detail-button">
+        <span className='button-text'>Ver Detalles</span>
+          <span className='button-icon'>
+            <box-icon name='detail' ></box-icon>
+          </span>
+      </button>
+      <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
+        El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
+        El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
+      </span>
+    </section>
+    <div className="separator">
+      <hr/>
+    </div>
+    <section className='casa-leones-section' id='casa-leones'>
+      <h2 className='section-title'>Casa Leones</h2>
+      <div className="grid-container">
+        <span className="detail-row">Arquitectos</span>
+        <span className="detail-row right">Estudio Arq414; Noelia S. Kronemberger; Nestor Germán Sosa</span>
+        <span className="detail-row">Área</span>
+        <span className="detail-row right">130m² cubiertos; 35m² semicubiertos</span>
+        <span className="detail-row">Superficie del terreno</span>
+        <span className="detail-row right">494m²</span>
+        <span className="detail-row">Superficie Pileta</span>
+        <span className="detail-row right">30m²</span>
+        <span className="detail-row">Orientación</span>
+        <span className="detail-row right">Norte-Sur</span>
+        <span className="detail-row">Año</span>
+        <span className="detail-row right">2021-2022</span>
+        <span className="detail-row">Barrio</span>
+        <span className="detail-row right">Estación Alvear</span>
+        <span className="detail-row">Localidad</span>
+        <span className="detail-row right">Alvear, Santa Fe</span>
+        <span className="detail-row">País</span>
+        <span className="detail-row right">Argentina</span>
+      </div>
+      <button type='button' className="section-button detail-button">
+        <span className='button-text'>Ver Detalles</span>
+          <span className='button-icon'>
+            <box-icon name='detail' ></box-icon>
+          </span>
+      </button>
+      <span className='details'>Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública.
+        El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. 
+        El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina. 
+      </span>
+    </section>
+    <div className="separator">
+      <hr/>
+    </div>
+    <section className="contact">
+      <h2 className="section-title">Contacto</h2>
+      <div className="contact-container">
+        <button type='button' className="section-button detail-button">
+          <span className='button-text'>LinkedIn</span>
+            <span className='button-icon'>
+            <box-icon name='linkedin-square' type='logo' ></box-icon>
+            </span>
+        </button>
+        <button type='button' className="section-button detail-button">
+          <span className='button-text'>E-Mail</span>
+            <span className='button-icon'>
+            <box-icon name='envelope' type='solid' ></box-icon>
+            </span>
+        </button>
+      </div>
     </section>
     </div>
   )

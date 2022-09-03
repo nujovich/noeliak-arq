@@ -46,6 +46,7 @@
 }
 
 .about-me-section{
+  padding: 10px 0;
   height: 100vh;
 }
 
@@ -64,7 +65,7 @@
 }
 
 .about-me-paragraph{
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .profile-picture{
@@ -77,7 +78,7 @@
 .about-me-buttons-container{
   display: inline-flex;
   gap: 2rem;
-  margin-top: 70px;
+  margin-top: 15px;
 }
 
 .section-button{
@@ -101,15 +102,19 @@
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-
-.projects-buttons-container{
-  display: inline-flex;
-  gap: 2rem;
+.separator{
+  border-top: 4px solid #64949E;
+  resize: none;
 }
 
-.separator, .top{
-  border-top: 4px solid #64949E;
-  margin-top: 30px;
+.projects-section{
+  padding: 10px 0
+}
+
+.projects-buttons-container{
+  margin: 15px 0;
+  display: inline-flex;
+  gap: 2rem;
 }
 
 .top-title{
@@ -135,7 +140,7 @@
 }
 
 .detail-button{
-  margin-top: 30px;
+  margin: 30px 0;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -149,4 +154,9 @@
   margin-top: 20px;
   display: flex;
   text-align: center;
+}
+
+.contact-container{
+  display: inline-flex;
+  gap: 2rem;
 }
