@@ -12,8 +12,8 @@ function App() {
         <box-icon name='menu-alt-right'></box-icon>
       </label>
       <nav className="menu">
-        <a href="#">Home</a>
-        <a href="#">Proyectos</a>
+        <a href="/">Home</a>
+        <a href="#projects">Proyectos</a>
         <label htmlFor="check" className="collapse-menu">
           <box-icon name='right-arrow-alt'></box-icon>
       </label>
@@ -22,7 +22,7 @@ function App() {
     <section className="about-me-section" id='about-me'>
       <h2 className="section-title">Noelia Kronemberger</h2>
       <div className="about-me-container">
-        <p className="about-me-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni rem odit accusantium amet, ipsum magnam veniam quisquam quis quidem, dicta omnis iste voluptates asperiores doloremque! Expedita quidem excepturi modi enim aliquid, nisi molestias consequuntur eum distinctio consequatur repudiandae dolore illo.</p>
+        <p className="about-me-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <img src="/assets/profile_picture.jpg" alt="Noelia" className="profile-picture" />
       </div>
       <div className="about-me-buttons-container">
@@ -44,7 +44,7 @@ function App() {
       <hr/>
     </div>
     <section className='projects-section' id='projects'>
-      <h2 className='section-title top-title'>Mis Proyectos</h2>
+      <h2 className='section-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
         <button type='button' className='section-button'>
           <span className='button-text'>Casa Patio</span>
@@ -278,6 +278,11 @@ function App() {
         </button>
       </div>
     </section>
+    <footer className='footer-section'>
+      <p>Sitio hecho por</p><a className='footer-link' href='https://nujovich.github.io/portfolio'>Nadia Ujovich</a>
+      <a className='footer-link' href='https://linkedin.com/in/nadiaujovich'><box-icon name='linkedin-square' type='logo' ></box-icon></a>
+      <a className='footer-link' href="https://github.com/nujovich"><box-icon name='github' type='logo' ></box-icon></a>
+    </footer>
     </div>
   )
 }
