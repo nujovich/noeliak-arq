@@ -31,10 +31,20 @@
   
 }
 
-.menu a{
+.menu li{
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-link{
   text-decoration: none;
   color: #002;
   padding-right: 10px;
+}
+
+.menu-link:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .hamburguer-menu{
@@ -186,19 +196,16 @@
 
 @media(max-width: 768px) {
 
-  .hamburguer-menu, .collapse-menu, .menu a {
+  .hamburguer-menu, .collapse-menu, .menu-link {
     display: block;
   }
 
-  .menu {
-    padding-top: 70px
-  }
-
-  .menu a{
+  .menu-link{
     margin-top: 20px
   }
 
   .menu {
+    padding-top: 70px;
     z-index: 0;
     position: fixed;
     width: 100%;

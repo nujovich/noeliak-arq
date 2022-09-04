@@ -1,7 +1,24 @@
+import { useRef } from "react"
 
-import './App.css'
 
 function App() {
+
+  const home = useRef(null)
+  const projects = useRef(null)
+  const contact = useRef(null)
+  const casaPatio = useRef(null)
+  const casaAA = useRef(null)
+  const casaAei = useRef(null)
+  const casaDonMateo = useRef(null)
+  const casaLeones = useRef(null)
+
+  const scrollToSection = elementRef => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    })
+  }
+
 
   return (
     <div className="App">
@@ -12,14 +29,16 @@ function App() {
         <box-icon name='menu-alt-right'></box-icon>
       </label>
       <nav className="menu">
-        <a href="/">Home</a>
-        <a href="#projects">Proyectos</a>
+        <ul>
+          <li className="menu-link" onClick={() => scrollToSection(home)}>Sobre mí</li>
+          <li className="menu-link" onClick={() => scrollToSection(projects)}>Proyectos</li>
+        </ul>
         <label htmlFor="check" className="collapse-menu">
           <box-icon name='right-arrow-alt'></box-icon>
       </label>
       </nav>  
     </header>
-    <section className="about-me-section" id='about-me'>
+    <section className="about-me-section" ref={home}>
       <h2 className="section-title">Noelia Kronemberger</h2>
       <div className="about-me-container">
         <p className="about-me-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -32,7 +51,7 @@ function App() {
             <box-icon name='cloud-download'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button">
+        <button type='button' className="section-button" onClick={() => scrollToSection(contact)}>
         <span className='button-text'>Mi Contacto</span>
           <span className='button-icon'>
           <box-icon name='contact' type='solid'></box-icon>
@@ -43,34 +62,34 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='projects-section' id='projects'>
+    <section className='projects-section' ref={projects}>
       <h2 className='section-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
-        <button type='button' className='section-button'>
+        <button type='button' className='section-button' onClick={() => scrollToSection(casaPatio)}>
           <span className='button-text'>Casa Patio</span>
           <span className='button-icon'>
           <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button">
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAei)}>
         <span className='button-text'>Casa AEI</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button">
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAA)}>
         <span className='button-text'>Casa AA</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button">
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaDonMateo)}>
         <span className='button-text'>Casa Don Mateo</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button">
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaLeones)}>
         <span className='button-text'>Casa Leones</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
@@ -81,7 +100,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='casa-patio-section' id='casa-patio'>
+    <section className='casa-patio-section' ref={casaPatio}>
       <h2 className='section-title'>Casa Patio</h2>
       <div className="grid-container">
         <span className="detail-row">Arquitectos</span>
@@ -117,7 +136,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='casa-aei-section' id='casa-aei'>
+    <section className='casa-aei-section' ref={casaAei}>
       <h2 className='section-title'>Casa AEI</h2>
       <div className="grid-container">
         <span className="detail-row">Arquitectos</span>
@@ -153,7 +172,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='casa-aa-section' id='casa-aa'>
+    <section className='casa-aa-section' ref={casaAA}>
       <h2 className='section-title'>Casa AA</h2>
       <div className="grid-container">
         <span className="detail-row">Arquitectos</span>
@@ -189,7 +208,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='casa-don-mateo-section' id='casa-don-mateo'>
+    <section className='casa-don-mateo-section' ref={casaDonMateo}>
       <h2 className='section-title'>Casa Don Mateo</h2>
       <div className="grid-container">
         <span className="detail-row">Arquitectos</span>
@@ -225,7 +244,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className='casa-leones-section' id='casa-leones'>
+    <section className='casa-leones-section' ref={casaLeones}>
       <h2 className='section-title'>Casa Leones</h2>
       <div className="grid-container">
         <span className="detail-row">Arquitectos</span>
@@ -261,7 +280,7 @@ function App() {
     <div className="separator">
       <hr/>
     </div>
-    <section className="contact">
+    <section className="contact" ref={contact}>
       <h2 className="section-title">Contacto</h2>
       <div className="contact-container">
         <button type='button' className="section-button detail-button">
