@@ -60,7 +60,7 @@ function App() {
             <box-icon name='cloud-download'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(contact)} onClick={() => scrollToSection(contact)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(contact)}>
         <span className='button-text'>Mi Contacto</span>
           <span className='button-icon'>
           <box-icon name='contact' type='solid'></box-icon>
@@ -74,31 +74,31 @@ function App() {
     <section className='projects-section' ref={projects}>
       <h2 className='section-title'>Mis Proyectos</h2>
       <div className="projects-buttons-container">
-        <button type='button' className='section-button' onClick={() => scrollToSection(casaPatio)} onClick={() => scrollToSection(casaPatio)}>
+        <button type='button' className='section-button' onClick={() => scrollToSection(casaPatio)}>
           <span className='button-text'>Casa Patio</span>
           <span className='button-icon'>
           <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaAei)} onClick={() => scrollToSection(casaAei)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAei)}>
         <span className='button-text'>Casa AEI</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaAA)} onClick={() => scrollToSection(casaAA)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaAA)}>
         <span className='button-text'>Casa AA</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaDonMateo)} onClick={() => scrollToSection(casaDonMateo)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaDonMateo)}>
         <span className='button-text'>Casa Don Mateo</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
           </span>
         </button>
-        <button type='button' className="section-button" onClick={() => scrollToSection(casaLeones)} onClick={() => scrollToSection(casaLeones)}>
+        <button type='button' className="section-button" onClick={() => scrollToSection(casaLeones)}>
         <span className='button-text'>Casa Leones</span>
           <span className='button-icon'>
             <box-icon name='hard-hat' type='solid'></box-icon>
