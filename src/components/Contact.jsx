@@ -16,7 +16,7 @@ export const Contact = forwardRef((props, ref) => {
         <h2 className="section-title">Contacto</h2>
         <div className="buttons-container">
             <button type='button' className="section-button detail-button" onClick={openWhatssap}>
-            <span className='button-text'>WhatSapp</span>
+            <span className='button-text'>WhatsApp</span>
                 <span className='button-icon'>
                 <box-icon name='whatsapp' type='logo' ></box-icon>
                 </span>

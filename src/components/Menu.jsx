@@ -8,7 +8,7 @@ export const Menu = () => {
             </li>
                 
             <li>
-                <a href="#projects" className="menu-link">Mis Proyectos</a>
+                <a href="#projects" className="menu-link">Proyectos</a>
             </li>
             </ul>
             <label htmlFor="check" className="collapse-menu">
