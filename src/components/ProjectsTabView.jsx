@@ -34,7 +34,7 @@ export const ProjectsTabView = ({title, projects = []}) => {
                     }    
                 </div>
             }
-                <div className='project-content'>{project.id === 0 ? "Seleccione una pestaña para ver los detalles de cada proyecto" :
+                <div className='project-content'>{activeTabIndex === 0 ? "Seleccione una pestaña para ver los detalles de cada proyecto" :
                            project.id === 1 ? project.descripcion : "No hay contenido"}</div>
             </div>
         </section>
