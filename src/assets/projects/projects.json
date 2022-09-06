@@ -1,0 +1,41 @@
+{   
+    "data": [
+                {
+                    "id": 1,
+                    "ref": "casaPatio",
+                    "name": "Casa Patio",
+                    "descripcion": "Se proyecto desde el primer boseto un patio interno que permitiera al área pública, orientada al sur, contar con iluminación natural tanto directa como indirectamente. Este patio interno paso a ser el protagonista de esa vivienda, permitiendo separar fisicamente el área privada de la pública. El área privada de la casa, orientada al norte, consta de dos dormitorios y un baño. Uno de los dormitorios, el principal, fue pensado para poder alojar un área de escritorio con vista al patio interno y el dormitorio secundario para visitas. El área pública se planteo como un espacio abierto e integrado entre el living, comedor y cocina.",
+                    "datos": [
+                        "Estudio Arq414; Noelia S. Kronemberger; Nestor Germán Sosa",
+                        "130m² cubiertos; 35m² semicubiertos",
+                        "494m²",
+                        "30m²",
+                        "Norte-Sur",
+                        "2021-2022",
+                        "Estación Alvear",
+                        "Alvear, Santa Fe",
+                        "Argentina"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "ref": "casaAA",
+                    "name": "Casa AA"
+                },
+                {
+                    "id": 3,
+                    "ref": "casaAei",
+                    "name": "Casa AEI"
+                },
+                {
+                    "id": 4,
+                    "ref": "casaDonMateo",
+                    "name": "Casa Don Mateo"
+                },
+                {
+                    "id": 5,
+                    "ref": "casaLeones",
+                    "name": "Casa Leones"
+                }
+            ]
+}

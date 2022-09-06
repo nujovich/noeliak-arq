@@ -97,7 +97,7 @@
   margin-bottom: 15px;
 }
 
-.section-button{
+.section-button, .tab {
   display: inline-flex;
   height: 50px;
   padding: 0px;
@@ -107,13 +107,19 @@
   cursor: pointer;
 }
 
-.button-text, .button-icon{
+.active-tab {
+  border-top: 4px solid #64949E;
+  border-left: 4px solid #64949E;
+  border-right: 4px solid #64949E;
+}
+
+.button-text, .button-icon, .tab-text, .tab-icon{
   display: inline-flex;
   align-items: center;
   padding: 0px 10px;
   height: 100%;
 }
-.button-icon{
+.button-icon, .tab-icon{
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -126,6 +132,11 @@
 .projects-section{
   padding: 10px 0
 }
+
+.project-list{
+  list-style: none;
+}
+
 .separator{
   border-top: 4px solid #64949E;
   max-width: 95vw;
@@ -135,14 +146,27 @@
   padding: 10px 0
 }
 
-.projects-buttons-container{
+.projects-tab-container{
   margin: 15px 0;
-  display: inline-flex;
-  gap: 2rem;
 }
 
-.top-title{
-  margin-top: -30px;
+.project-tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tabs{
+  list-style: none;
+}
+
+
+.project-content{
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
 
 .grid-container{
@@ -169,16 +193,6 @@
     gap: 2rem;
 }
 
-
-.details{
-  display: none;
-}
-
-.detail-button:focus ~ .details{
-  margin-top: 20px;
-  display: flex;
-  text-align: center;
-}
 
 .footer-section{
   display: flex;
