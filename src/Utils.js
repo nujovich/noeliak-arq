@@ -1,6 +1,6 @@
 import FileSaver from "file-saver";
 
-export const CONSTANTS = [
+export const constants = [
     "Arquitectos", 
     "Área", 
     "Superficie del terreno", 
@@ -11,6 +11,7 @@ export const CONSTANTS = [
     "Localidad", 
     "País"
 ]
+
 export const FILE_PATH = 'assets/CV ARQ KRONEMBERGER NOELIA 2022 AGOSTO.pdf'
 
 export const downloadCV = () => {

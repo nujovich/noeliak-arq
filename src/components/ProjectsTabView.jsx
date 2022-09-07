@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ProjectDetails } from "./ProjectDetails";
 
 export const ProjectsTabView = ({title, projects = []}) => {
 
@@ -34,8 +35,8 @@ export const ProjectsTabView = ({title, projects = []}) => {
                     }    
                 </div>
             }
-                <div className='project-content'>{activeTabIndex === 0 ? "Seleccione una pestaña para ver los detalles de cada proyecto" :
-                           project.id === 1 ? project.descripcion : "No hay contenido"}</div>
+                <div className='project-content'>{activeTabIndex === 0 ? "Seleccione una pestaña para ver los detalles de cada proyecto" 
+                : <ProjectDetails project={project}/>}</div>
             </div>
         </section>
     )

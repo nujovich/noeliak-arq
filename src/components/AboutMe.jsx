@@ -10,7 +10,7 @@ export const AboutMe = forwardRef(({contact}, ref) => {
             <p className="about-me-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <img src="/assets/profile_picture.jpg" alt="Noelia" className="profile-picture" />
         </div>
-        <div className="about-me-buttons-container">
+        <div className="buttons-container">
             <button type='button' className='section-button' onClick={() => downloadCV()}>
             <span className='button-text'>Mi Curriculum</span>
             <span className='button-icon'>
